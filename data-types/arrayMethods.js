@@ -1,13 +1,15 @@
-// Arrat.map **************************************************************
+// Array.map **************************************************************
 /**
  * Il metodo map() di un array in JavaScript crea un nuovo array con i risultati della chiamata di una funzione fornita su ogni elemento nell'array originale.
  */
 let numeri = [1, 2, 3, 4, 5];
 
 // Crea un nuovo array con il quadrato di ogni numero
-let quadrati = numeri.map(function(numero) {
-    return numero * numero;
-});
+let quadrati = numeri.map(
+    function (element) {
+        return element * element;
+    }
+);
 
 console.log(quadrati); // Stampa [1, 4, 9, 16, 25]
 
@@ -18,8 +20,8 @@ console.log(quadrati); // Stampa [1, 4, 9, 16, 25]
 
 // Crea un nuovo array con solo i numeri pari
 // In questo esempio, la funzione passata a filter() verifica se ogni numero nell'array numeri è pari. Se lo è, il numero passa il test e viene incluso nel nuovo array. Se non lo è, viene escluso
-let pari = numeri.filter(function(numero) {
-    return numero % 2 === 0;
+let pari = numeri.filter(function (numero) {
+  return numero % 2 === 0;
 });
 
 console.log(pari); // Stampa [2, 4]
@@ -30,8 +32,8 @@ console.log(pari); // Stampa [2, 4]
 // Calcola la somma di tutti i numeri nell'array
 // In questo esempio, la funzione passata a reduce() prende due argomenti: un accumulatore e l'elemento corrente. L'accumulatore è il valore restituito dalla chiamata precedente alla funzione riduttrice, o il valore iniziale se fornito (come lo 0 in questo caso). L'elemento corrente è l'elemento dell'array attualmente in elaborazione.
 // La funzione riduttrice somma l'accumulatore e l'elemento corrente, e restituisce il risultato. Questo risultato viene poi utilizzato come accumulatore per la prossima chiamata alla funzione riduttrice.
-let somma = numeri.reduce(function(accumulatore, numero) {
-    return accumulatore + numero;
+let somma = numeri.reduce(function (accumulatore, numero) {
+  return accumulatore + numero;
 }, 0);
 
 console.log(somma); // Stampa 15
@@ -40,16 +42,16 @@ console.log(somma); // Stampa 15
 // Il metodo find() di un array in JavaScript restituisce il primo elemento nell'array che soddisfa la funzione di test fornita. Se nessun elemento soddisfa la funzione di test, viene restituito undefined.
 
 // Trova il primo numero nell'array che è maggiore di 3
-let numero = numeri.find(function(n) {
-    return n > 3;
+let numero = numeri.find(function (n) {
+  return n > 3;
 });
 
 console.log(numero); // Stampa 4
 
 // Array.findIndex **************************************************************
 // Trova l'indice del primo numero nell'array che è maggiore di 3
-let indice = numeri.findIndex(function(n) {
-    return n > 3;
+let indice = numeri.findIndex(function (n) {
+  return n > 3;
 });
 
 console.log(indice); // Stampa 3
@@ -75,8 +77,8 @@ console.log(arr4); // Stampa [1, 2, 3, 4, 5, 6, 7, 8, 9]
 // Array.forEach **************************************************************
 
 // Stampa ogni numero
-numeri.forEach(function(numero) {
-    console.log(numero);
+numeri.forEach(function (numero) {
+  console.log(numero);
 });
 
 // Array.slice **************************************************************
@@ -85,7 +87,6 @@ numeri.forEach(function(numero) {
 let fetta = numeri.slice(1, 3);
 
 console.log(fetta); // Stampa [2, 3]
-
 
 // Prende una fetta dell'array da indice 2 fino alla fine
 let fetta2 = numeri.slice(2);

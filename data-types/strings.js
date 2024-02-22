@@ -7,9 +7,12 @@ console.log(saluto); // Stampa "Ciao Mondo"
 let lunghezza = str1.length;
 console.log(lunghezza); // Stampa 4
 
+// str1 vale "Ciao"
 let primoCarattere = str1[0]; // Accede al primo carattere
 console.log(primoCarattere); // Stampa "C"
+console.log(str1[5]); // Stampa undefined 
 
+// str2 vale "Mondo"
 let posizione = str2.indexOf('on'); // Trova la posizione di 'on' in str2
 console.log(posizione); // Stampa 1
 

@@ -24,7 +24,6 @@ let num = Number(str); // Converte la stringa in un numero
 console.log(num); // Stampa 123
 
 let val = "123";
-
 console.log(isNaN(val)); // Verifica se il valore non è un numero, stampa false
 
 /**
