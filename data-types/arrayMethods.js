@@ -18,6 +18,8 @@ console.log(quadrati); // Stampa [1, 4, 9, 16, 25]
  * Il metodo filter() di un array in JavaScript crea un nuovo array con tutti gli elementi che passano un test implementato dalla funzione fornita.
  */
 
+// let numeri = [1, 2, 3, 4, 5];
+
 // Crea un nuovo array con solo i numeri pari
 // In questo esempio, la funzione passata a filter() verifica se ogni numero nell'array numeri è pari. Se lo è, il numero passa il test e viene incluso nel nuovo array. Se non lo è, viene escluso
 let pari = numeri.filter(function (numero) {
